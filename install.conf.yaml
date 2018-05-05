@@ -5,16 +5,18 @@
 
 - link:
     # Terminal:
-    ~/.shell:
-      path: shell
-      create: true
-    ~/.shell_env: config/shell_env
-    ~/.zshrc: config/zshrc
+    ~/.zshrc: 
+        force: true
+        path: config/zshrc
 
     # Git:
-    ~/.gitconfig: config/gitconfig
-    ~/.gitignore_global: config/gitignore
-
+    ~/.gitconfig:
+        force: true
+        path: config/gitconfig
+    ~/.gitignore_global:
+        force: true
+        path: config/gitignore
+   
 - brewfile:
     file: Brewfile
     no-upgrage: true
