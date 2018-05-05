@@ -12,6 +12,7 @@ brew 'postgres'
 brew 'python'
 
 # Apps
+cask 'dotnet-sdk'
 cask 'firefox'
 cask 'iterm2'
 cask 'sourcetree'
