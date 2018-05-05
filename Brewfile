@@ -15,6 +15,7 @@ brew 'python'
 cask 'firefox'
 cask 'iterm2'
 cask 'sourcetree'
+cask 'spectacle'
 cask 'visual-studio-code'
 
 # Fonts
