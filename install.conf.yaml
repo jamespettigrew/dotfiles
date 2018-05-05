@@ -1,0 +1,34 @@
+- clean: ['~']
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+
+- link:
+    # Terminal:
+    ~/.shell:
+      path: shell
+      create: true
+    ~/.shell_env: config/shell_env
+    ~/.zshrc: config/zshrc
+
+    # Git:
+    ~/.gitconfig: config/gitconfig
+    ~/.gitignore_global: config/gitignore
+
+- brewfile:
+    file: Brewfile
+    no-upgrage: true
+
+# These links should be created after everything is installed:
+- link:
+    # vscode:
+    "~/Library/Application Support/Code/User/settings.json":
+        path: vscode/settings.json
+        create: true
+    "~/Library/Application Support/Code/User/snippets":
+        path: vscode/snippets
+        create: true
+
+- shell:
+  - bash ./vscode/install.sh
+
