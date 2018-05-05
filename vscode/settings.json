@@ -1,4 +1,5 @@
 {
     "terminal.external.osxExec": "iTerm.app",
     "terminal.integrated.shell.osx": "/bin/zsh",
+    "workbench.colorTheme": "Nord",
 }
