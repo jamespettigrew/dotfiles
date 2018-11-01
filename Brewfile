@@ -9,7 +9,10 @@ brew 'zsh-completions'
 
 brew 'git'
 brew 'postgres'
+
 brew 'python'
+brew 'pyenv'
+brew 'pipenv'
 
 # Apps
 cask 'dotnet-sdk'
